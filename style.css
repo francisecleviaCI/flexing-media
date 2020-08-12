@@ -1,23 +1,26 @@
 .container {
   display: flex;
   justify-content: space-around;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 }
 
 
 .square {
   background-color: navy;
-  font-size: 4em;
+  font-size: 2em;
   color: yellow;
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
   border: 2px solid silver;
   text-align: center;
 }
 
+
+
+
 @media (min-width: 1001px ) {
   .container {
-    flex-direction: column;
+    flex-direction: row;
   }
 
 }
@@ -25,23 +28,28 @@
 
 @media (max-width: 1000px) and (min-width: 801px ) {
   .container {
-    height: 1600px;
+    height: 100px;
+    width: 500px;
   }
 
 }
 
 @media (max-width: 800px) and (min-width: 601px ) {
   .container {
-    height: 160px;
+    height: 500px;
+    width: 100px;
+    
   }
 
 }
 
 @media (max-width: 600px) {
   .container {
-    flex-direction: row;
+    flex-direction: column;
+    
   }
 
 }
+
 
 
