@@ -1,8 +1,47 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  /* flex-wrap: wrap; */
+}
+
+
 .square {
-  background-color: green;
+  background-color: navy;
   font-size: 4em;
-  color: red;
+  color: yellow;
   width: 80px;
   height: 80px;
-  border: 2px solid orange;
+  border: 2px solid silver;
+  text-align: center;
 }
+
+@media (min-width: 1001px ) {
+  .container {
+    flex-direction: column;
+  }
+
+}
+
+
+@media (max-width: 1000px) and (min-width: 801px ) {
+  .container {
+    height: 1600px;
+  }
+
+}
+
+@media (max-width: 800px) and (min-width: 601px ) {
+  .container {
+    height: 160px;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: row;
+  }
+
+}
+
+
